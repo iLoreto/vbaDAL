@@ -43,6 +43,6 @@ End Function
 Private Sub Class_Initialize()
     Dim connStr As String
     Set objConnection = New ADODB.Connection
-    connStr = "Provider=SQLOLEDB;Data Source=sahp-ptserver;Initial Catalog=PTDB;Trusted_Connection=yes;"
+    connStr = "Provider=SQLOLEDB;Data Source=[ServerName];Initial Catalog=[DatabaseName];Trusted_Connection=yes;"
     objConnection.ConnectionString = connStr
 End Sub
